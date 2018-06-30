@@ -87,9 +87,9 @@ print annual_rainfall
 row_count = 13
 ```
 
-    [ ] **Numbers**:
+- [ ] **Numbers**:
 
-*Les variables peuvent aussi n'être que des valeurs numériques. Un nombre avec une virgule s'appelle un **float**. Il est possible de définir des floats avec des nombres après la virgule (dot)ou simplement en incluant une virgule (dot) à la fin. Il est aussi possible de définir un float avec une signification scientifique, avec un **e** indiquant la puissance 10.*
+*Les variables peuvent aussi n'être que des valeurs numériques. Un nombre avec une virgule s'appelle un **float**. Il est possible de définir des floats avec des nombres après la virgule (dot) ou simplement en incluant une virgule (dot) à la fin. Il est aussi possible de définir un float avec une signification scientifique, avec un **e** indiquant la puissance 10.*
 
 ```py
 int1 = 1
@@ -102,4 +102,91 @@ float3 = -5.5
 float4 = 1.5e2
 ```
 
-- 
+- [ ] **Division**:
+
+*Dans Python 2, il est possible de diviser deux entiers pour obtenir un entier comme résultant. Lorsque le quotient est un nombre entier, cela fonctionne bien.*
+
+```py
+quotient = 6/2
+# the value of quotient is now 3, which makes sense
+```
+
+*Mais si les nombres ne se divisent pas uniformément, le résultat de la division sera alors tronqué en un nombre entier. Le quotient sera donc arrondi à un nombre entier.*
+
+```py
+quotient = 7/2
+# the value of quotient is 3, even though the result of the division here is 3.5
+```
+
+*Pour obtenir un résultat flottant, les développeurs modifient soit le numérateur, soit le dénominateur (ou les deux) pour en faire un flottant.*
+
+```py
+quotient1 = 7./2
+# the value of quotient1 is 3.5
+quotient2 = 7/2.
+# the value of quotient2 is 3.5
+quotient3 = 7./2.
+# the value of quotient3 is 3.5
+```
+
+- [ ] **Multi-line Strings**:
+
+*Parfois, il arrive que le string fasse plusieurs lignes lorsque le code est complexe. Pour ce faire, il convient d'insérer **"""***.
+
+```py
+address_string = """136 Whowho Rd
+Apt 7
+Whosville, WZ 44494"""
+```
+
+- [ ] **Boleans**:
+
+*Lorsqu'il est nécessaire d'avoir une variable qui est **True** ou **False**: c'est un **Bolean**. Ce type de données ne prendra qu'une des deux données. Avec Python, les boleans sont définis par les mots **True** ou **False**. Un bolean est un cas particulier d'un entier. Une valeur True correspond à une valeur entière de 1 et se comportera de la même manière. La valeur False correspond à une valeur entière de 0.*
+
+```py
+a = True
+b = False
+```
+
+```py
+# Hi! I'm Maria and I live in script.py.
+# I'm an expert Python coder.
+# I'm 21 years old and I plan to program cool stuff forever.
+age_is_12 = False
+name_is_maria = True
+```
+
+- [ ] **ValueEror**:
+
+*Python affecte automatiquement une variable au type de données approprié en fonction de la valeur qui lui est attribuée. Une variable avec la valeur **7** est un **entier**, **7.** est un **flottant** et **"7"** est un **string**. Parfois, il est nécessaire de convertir des variables en différents types de données. Par exemple, si nous souhaitons imprimer un entier en tant que partie d'un string, il faudrait alors convertir cet entier en un string en premier. Pour ce faire, il convient d'utiliser **str()**.*
+
+```py
+age = 13
+print "I am " + str(age) + " years old!"
+# this would print: 
+>>> "I am 13 years old!"
+```
+
+*Si le string est "7" et qu'il convient d'effectuer des opérations arithmétiques, il convient de convertir en un type de données numériques. Pour ce faire, il convient d'utiliser **int():**.*
+
+```py
+number1 = "100"
+number2 = "10"
+
+string_addition = number1 + number2 
+#string_addition now has a value of "10010"
+
+int_addition = int(number1) + int(number2)
+#int_addition has a value of 110
+```
+
+*Si **int()** est utilisé sur un nombre à virgule flottante, il arrondira alors le nombre vers le bas. Pour conserver la valeur décimale, il convient d'utiliser **float():**.*
+
+```py
+string_num = "7.5"
+print int(string_num)
+print float(string_num)
+>>> 7
+>>> 7.5
+```
+
