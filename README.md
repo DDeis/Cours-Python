@@ -1,5 +1,5 @@
 # Cours-Python
-## Les bases
+## Python Syntax
 - Faire parler Python 2: 
 ```py
 print "Hello, world!"
