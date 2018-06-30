@@ -8,14 +8,14 @@ print "Hello, world!"
 ```py 
 print ("Hello, world!")
 ```
-- String: 
-Chaîne de caractères (lettres, nombres, symboles)
-- Pour combiner des châines de caractères (string), utiliser l'opérateur (operator) +
+- [ ] **String**: 
+*Chaîne de caractères (lettres, nombres, symboles)*
+- *Pour combiner des châines de caractères (`string`), utiliser l'opérateur (operator) `+`*
 ```py
 print "Hello" + "world!"
 ```
-- Variable: 
-Donner un nom à une valeur
+- **Variable**: 
+*Donner un nom à une valeur*
 ```py
 say = "Hello, aujourd'hui nous sommes le"
 day = "samedi"
