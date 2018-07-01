@@ -107,9 +107,13 @@ not 10 % 3 <= 10 % 2 = True
 
 *Les boolean operators ne sont pas simplement évalués de gauche à droite. Tout comme avec les opérateurs artihmétiques, il existe un ordre des opérations pour les opérateurs booléens.*
 
-**Not** *n'est pas évalué en premier et est évalué ensuite.*
+**And** * n'est pas évalué en premier et est évalué ensuite.*
+
+**Not** *est évalué en premier*
 
 **Or** *est évalué en dernier. Par exemple "True or not False and False" renvoie à "True".*
+
+**L'ordre est donc: not, and, or**
 
 *Les parenthèses () s'assurent que les expressions sont évaluées dans l'ordre souhaité. Tout ce qui est entre () est évalué comme sa propre unité.*
 
@@ -160,4 +164,3 @@ elif 8 < 9:
 else:
   print "I also don't get printed!"
   ```
-  
